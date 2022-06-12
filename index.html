@@ -11,8 +11,12 @@
 </head>
 <body>
     <div id="backup-section">
-        <button id="save-btn">Save</button>
+        <span>
+            <button id="save-btn">Save</button>
+            <button onclick="takeshot()">Take Screenshot</button>
+        </span>
         <button id="restaure-btn">Restaure</button>
+
     </div>
 
     <div class="edition">
@@ -86,4 +90,25 @@
 <script src="Tree.js"></script>
 <script src="index.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+<script type="text/javascript">
+  
+    // Define the function 
+    // to screenshot the div
+    function takeshot() {
+        let div =
+            document.getElementById('graph');
+
+        // Use the html2canvas
+        // function to take a screenshot
+        // and append it
+        // to the output div
+        html2canvas(div).then(
+            function (canvas) {
+                document
+                .getElementById('output')
+                .appendChild(canvas);
+            })
+    }
+</script>
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson Name - Graph</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+    <div id="backup-section">
+        <button id="save-btn">Save</button>
+        <button id="restaure-btn">Restaure</button>
+    </div>
+
+    <div class="edition">
+        <div class="close-btn-container">
+            <button class="close-edition-btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+        </div>
+        <div>
+            <fieldset id="label-fieldset">
+                <legend>Modify the label</legend>
+                <label for="label">label</label>
+                <input type="text" name="label" id="edition-label">
+            </fieldset>
+
+            <fieldset id="color-fieldset">
+                <legend>Choose the color:</legend>
+                <div>
+                    <input type="radio" id="white" checked name="edition-color" value="white">
+                    <label for="white">white</label>
+                </div>
+                <div>
+                    <input type="radio" id="red" name="edition-color" value="red">
+                    <label for="red">red</label>
+                </div>            
+                <div>
+                    <input type="radio" id="blue" name="edition-color" value="blue">
+                    <label for="blue">blue</label>
+                </div>
+                <div>
+                    <input type="radio" id="green" name="edition-color" value="green">
+                    <label for="green">green</label>
+                </div>
+                <div>
+                    <input type="radio" id="yellow" name="edition-color" value="yellow">
+                    <label for="yellow">yellow</label>
+                </div>
+                <div>
+                    <input type="radio" id="orange" name="edition-color" value="orange">
+                    <label for="orange">orange</label>
+                </div>
+                <div>
+                    <input type="radio" id="purple" name="edition-color" value="purple">
+                    <label for="purple">purple</label>
+                </div>
+                <div>
+                    <input type="radio" id="grey" name="edition-color" value="grey">
+                    <label for="grey">grey</label>
+                </div>
+            </fieldset>
+            <fieldset id="content-fieldset">
+                <legend> Content </legend>
+                <div id="edition-content"></div>
+            </fieldset>
+            <div class="add-validate-btn-container">
+                <input type="button" value="Add node" class="add-node-btn">
+                <input type="button" value="validate" class="validate-edition-btn">
+            </div>
+        </div>
+    </div>
+
+    <div id="graph">
+    </div>
+    <div id="output"></div>
+</body>
+
+<!-- Main Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/simplestorage.js@0.2.1/simpleStorage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Node.js"></script>
+<script src="Tree.js"></script>
+<script src="index.js"></script>
+
+</html>

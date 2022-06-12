@@ -63,6 +63,7 @@
 #graph {
     font-family: 'Lato', sans-serif;
     margin-top: 5px;
+    width: max-content;
 }
 #backup-section{
     /* top: 1px;
